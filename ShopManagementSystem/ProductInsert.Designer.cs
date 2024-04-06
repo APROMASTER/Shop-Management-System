@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ProductidLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.ProductID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Submit = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
@@ -44,16 +42,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ProductidLabel
-            // 
-            this.ProductidLabel.AutoSize = true;
-            this.ProductidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductidLabel.Location = new System.Drawing.Point(11, 135);
-            this.ProductidLabel.Name = "ProductidLabel";
-            this.ProductidLabel.Size = new System.Drawing.Size(89, 20);
-            this.ProductidLabel.TabIndex = 51;
-            this.ProductidLabel.Text = "Product ID";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -61,17 +49,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(900, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 32);
+            this.label7.Size = new System.Drawing.Size(169, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "ADD PRODUCT";
-            // 
-            // ProductID
-            // 
-            this.ProductID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductID.Location = new System.Drawing.Point(153, 135);
-            this.ProductID.Name = "ProductID";
-            this.ProductID.Size = new System.Drawing.Size(253, 26);
-            this.ProductID.TabIndex = 38;
             // 
             // panel1
             // 
@@ -173,8 +153,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 753);
-            this.Controls.Add(this.ProductidLabel);
-            this.Controls.Add(this.ProductID);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Submit);
             this.Controls.Add(this.Clear);
@@ -197,10 +175,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label ProductidLabel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox ProductID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Button Clear;

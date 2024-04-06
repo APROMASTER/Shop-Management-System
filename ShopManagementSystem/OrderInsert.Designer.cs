@@ -56,7 +56,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.Product_Name = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.OrderID = new System.Windows.Forms.TextBox();
             this.Product_search = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -77,7 +76,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -108,6 +106,7 @@
             this.AddedProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AddedProducts.Location = new System.Drawing.Point(10, 34);
             this.AddedProducts.Name = "AddedProducts";
+            this.AddedProducts.RowHeadersWidth = 51;
             this.AddedProducts.RowTemplate.Height = 24;
             this.AddedProducts.Size = new System.Drawing.Size(650, 332);
             this.AddedProducts.TabIndex = 1;
@@ -357,13 +356,6 @@
             this.label25.TabIndex = 42;
             this.label25.Text = "ORDER DETAILS";
             // 
-            // OrderID
-            // 
-            this.OrderID.Location = new System.Drawing.Point(281, 70);
-            this.OrderID.Name = "OrderID";
-            this.OrderID.Size = new System.Drawing.Size(192, 22);
-            this.OrderID.TabIndex = 37;
-            // 
             // Product_search
             // 
             this.Product_search.Location = new System.Drawing.Point(93, 41);
@@ -398,7 +390,7 @@
             this.label23.ForeColor = System.Drawing.SystemColors.Control;
             this.label23.Location = new System.Drawing.Point(639, 11);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(339, 32);
+            this.label23.Size = new System.Drawing.Size(324, 31);
             this.label23.TabIndex = 0;
             this.label23.Text = "SHOP MANAGEMENT SYSTEM";
             // 
@@ -551,16 +543,6 @@
             this.label10.TabIndex = 13;
             this.label10.Text = "Search";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(201, 73);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(74, 20);
-            this.label26.TabIndex = 43;
-            this.label26.Text = "Order ID";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.Amount);
@@ -608,10 +590,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.OrderID);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.panel3);
             this.Name = "OrderInsert";
             this.Text = "OrderInsert";
@@ -666,7 +646,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox Product_Name;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox OrderID;
         private System.Windows.Forms.TextBox Product_search;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
@@ -687,7 +666,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;

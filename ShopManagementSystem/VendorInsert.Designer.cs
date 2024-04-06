@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
-            this.VendorID = new System.Windows.Forms.TextBox();
             this.submit = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
             this.Email = new System.Windows.Forms.TextBox();
@@ -44,24 +42,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(25, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 20);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "Vendor ID";
-            // 
-            // VendorID
-            // 
-            this.VendorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VendorID.Location = new System.Drawing.Point(225, 92);
-            this.VendorID.Name = "VendorID";
-            this.VendorID.Size = new System.Drawing.Size(245, 26);
-            this.VendorID.TabIndex = 38;
             // 
             // submit
             // 
@@ -155,7 +135,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(900, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 32);
+            this.label1.Size = new System.Drawing.Size(194, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "INSERT VENDORS";
             // 
@@ -184,8 +164,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 753);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.VendorID);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.Email);
@@ -209,9 +187,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox VendorID;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.TextBox Email;

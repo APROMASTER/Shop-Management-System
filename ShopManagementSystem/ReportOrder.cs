@@ -37,8 +37,8 @@ namespace ShopManagementSystem
                 var select = "SELECT * FROM ORDER_VIEW WHERE DATE BETWEEN @start AND @end ;";
 
                 var dataAdapter = new SqlDataAdapter(select, con);
-                dataAdapter.SelectCommand.Parameters.AddWithValue("@start", FromDate.Text);
-                dataAdapter.SelectCommand.Parameters.AddWithValue("@end", Todate.Text);
+                dataAdapter.SelectCommand.Parameters.AddWithValue("@start", FromDate.Value.ToString("yyyy-MM-dd"));
+                dataAdapter.SelectCommand.Parameters.AddWithValue("@end", Todate.Value.ToString("yyyy-MM-dd"));
                 //MessageBox.Show(dateTimePicker1.Value.Date.ToString("yyyyMMdd"));
                 var commandBuilder = new SqlCommandBuilder(dataAdapter);
                 var ds = new DataSet();

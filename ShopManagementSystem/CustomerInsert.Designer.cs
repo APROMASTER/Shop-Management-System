@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.customerId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.CustIDLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.submitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
@@ -49,14 +47,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // customerId
-            // 
-            this.customerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customerId.Location = new System.Drawing.Point(216, 79);
-            this.customerId.Name = "customerId";
-            this.customerId.Size = new System.Drawing.Size(277, 26);
-            this.customerId.TabIndex = 1;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -64,7 +54,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(900, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(206, 32);
+            this.label7.Size = new System.Drawing.Size(196, 31);
             this.label7.TabIndex = 0;
             this.label7.Text = "ADD CUSTOMERS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -76,7 +66,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.Control;
             this.label9.Location = new System.Drawing.Point(639, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(339, 32);
+            this.label9.Size = new System.Drawing.Size(324, 31);
             this.label9.TabIndex = 0;
             this.label9.Text = "SHOP MANAGEMENT SYSTEM";
             // 
@@ -88,16 +78,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2200, 53);
             this.panel3.TabIndex = 36;
-            // 
-            // CustIDLabel
-            // 
-            this.CustIDLabel.AutoSize = true;
-            this.CustIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustIDLabel.Location = new System.Drawing.Point(32, 79);
-            this.CustIDLabel.Name = "CustIDLabel";
-            this.CustIDLabel.Size = new System.Drawing.Size(104, 20);
-            this.CustIDLabel.TabIndex = 53;
-            this.CustIDLabel.Text = "Customer ID";
             // 
             // panel1
             // 
@@ -191,9 +171,10 @@
             this.Cust_phNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cust_phNoLabel.Location = new System.Drawing.Point(33, 165);
             this.Cust_phNoLabel.Name = "Cust_phNoLabel";
-            this.Cust_phNoLabel.Size = new System.Drawing.Size(122, 20);
+            this.Cust_phNoLabel.Size = new System.Drawing.Size(117, 20);
             this.Cust_phNoLabel.TabIndex = 41;
-            this.Cust_phNoLabel.Text = " Phone number";
+            this.Cust_phNoLabel.Text = "Phone number";
+            this.Cust_phNoLabel.Click += new System.EventHandler(this.Cust_phNoLabel_Click);
             // 
             // CustomerName
             // 
@@ -218,8 +199,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 753);
-            this.Controls.Add(this.customerId);
-            this.Controls.Add(this.CustIDLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.clearButton);
@@ -247,12 +226,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox customerId;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label CustIDLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Button clearButton;

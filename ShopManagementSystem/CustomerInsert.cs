@@ -31,7 +31,7 @@ namespace ShopManagementSystem
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            if (CustomerName.Text == "" || phno.Text == "" || CustomerAddress.Text == "" || CustomerEmail.Text == "" || customerId.Text == "")
+            if (CustomerName.Text == "" || phno.Text == "" || CustomerAddress.Text == "" || CustomerEmail.Text == "")
             {
                 MessageBox.Show("Please provide all the details", "Captions", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -54,7 +54,6 @@ namespace ShopManagementSystem
                 //To execute a stored procedure
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@cid", customerId.Text);
                 cmd.Parameters.AddWithValue("@cname", CustomerName.Text);
                 cmd.Parameters.AddWithValue("@phone_number", Convert.ToInt64(phno.Text));
                 cmd.Parameters.AddWithValue("@address", CustomerAddress.Text);
@@ -81,7 +80,6 @@ namespace ShopManagementSystem
                 phno.Clear();
                 CustomerAddress.Clear();
                 CustomerEmail.Clear();
-                customerId.Clear();
 
             }
             catch(Exception ex)
@@ -103,7 +101,6 @@ namespace ShopManagementSystem
             phno.Clear();
             CustomerAddress.Clear();
             CustomerEmail.Clear();
-            customerId.Clear();
         }
 
         private void CustomerInsert_FormClosing(object sender, FormClosingEventArgs e)
@@ -114,6 +111,11 @@ namespace ShopManagementSystem
         private void CustomerInsert_Deactivate(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Cust_phNoLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

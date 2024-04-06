@@ -28,7 +28,7 @@ namespace ShopManagementSystem
 
         private void Submit_Click(object sender, EventArgs e)
         {
-            if (ProductName.Text == "" || VendorID.Text == "" || Amount.Text == "" || ProductID.Text == "")
+            if (ProductName.Text == "" || VendorID.Text == "" || Amount.Text == "")
             {
                 MessageBox.Show("Please provide all the details", "Captions", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -40,9 +40,8 @@ namespace ShopManagementSystem
                 Connect connectObj = new Connect();
                 con = connectObj.connect();
 
-                SqlCommand cmd = new SqlCommand("Insert into PRODUCT (PID,PNAME,AMOUNT,VID) values(@pid,@pname,@amount,@vid);", con);
+                SqlCommand cmd = new SqlCommand("Insert into PRODUCT (PNAME,AMOUNT,VID) values(@pname,@amount,@vid);", con);
                 
-                cmd.Parameters.AddWithValue("@pid", ProductID.Text);
                 cmd.Parameters.AddWithValue("@pname", ProductName.Text);
 
                 cmd.Parameters.AddWithValue("@vid", VendorID.Text);
@@ -65,7 +64,6 @@ namespace ShopManagementSystem
                 ProductName.Clear();
                 VendorID.Clear();
                 Amount.Clear();
-                ProductID.Clear();
             }
             catch(Exception ex)
             {
@@ -85,7 +83,6 @@ namespace ShopManagementSystem
             ProductName.Clear();
             VendorID.Clear();
             Amount.Clear();
-            ProductID.Clear();
         }
 
         private void ProductInsert_Deactivate(object sender, EventArgs e)

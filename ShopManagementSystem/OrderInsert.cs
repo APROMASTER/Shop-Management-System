@@ -171,7 +171,7 @@ namespace ShopManagementSystem
                 AddedProducts.DataSource = transactionDT;
                 SubTotal.Text = subtotal.ToString();
 
-                if (ProductID.Text == "" || OrderID.Text == "")
+                if (ProductID.Text == "")
                 {
                     MessageBox.Show("Please provide all the details", "Captions", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -186,6 +186,7 @@ namespace ShopManagementSystem
             }
         }
 
+        private int lastOrderInserted;
         private void Save_Click(object sender, EventArgs e)
         {
             //Create the orders 
@@ -193,15 +194,29 @@ namespace ShopManagementSystem
             {
                 Connect connectObj = new Connect();
                 con = connectObj.connect();
-                SqlCommand cmd = new SqlCommand("Insert into MYORDER (ORD_ID,CID,DATE,AMOUNT) values(@oid,@cid,@date,@amount);", con);
+                SqlCommand cmd = new SqlCommand("Insert into MYORDER (CID,DATE,AMOUNT) values(@cid,@date,@amount);", con);
                 
-                cmd.Parameters.AddWithValue("@oid", OrderID.Text);
                 //cmd.Parameters.AddWithValue("@pid", textBox8.Text);
                 cmd.Parameters.AddWithValue("@cid", cid);
-                cmd.Parameters.AddWithValue("@date", date.Text);
+                cmd.Parameters.AddWithValue("@date", date.Value.ToString("yyyy-MM-dd"));
                 cmd.Parameters.AddWithValue("@amount", Total_Amt.Text);
 
                 int i = cmd.ExecuteNonQuery();
+
+                //Retrieve @@IDENTITY to lastOrderInserted
+                cmd = new SqlCommand("SELECT @@IDENTITY;", con);
+
+                SqlDataReader reader1;
+                reader1 = cmd.ExecuteReader();
+                if (reader1.Read())
+                {
+                    int.TryParse(reader1.GetValue(0).ToString(), out lastOrderInserted);
+                }
+                else
+                {
+                    MessageBox.Show("NO DATA FOUND");
+                }
+
                 //If count is equal to 1, than show frmMain form
                 if (i != 0)
                 {
@@ -239,7 +254,7 @@ namespace ShopManagementSystem
 
                     SqlCommand cmd = new SqlCommand("Insert into ORDER_DETAILS (ord_id,pid,quantity) values(@oid,@pid,@quantity);", con);
 
-                    cmd.Parameters.AddWithValue("@oid", OrderID.Text);
+                    cmd.Parameters.AddWithValue("@oid", lastOrderInserted);
                     cmd.Parameters.AddWithValue("@pid", transactionDT.Rows[i]["Product ID"].ToString());
                     cmd.Parameters.AddWithValue("@quantity", transactionDT.Rows[i]["Quantity"].ToString());
 
@@ -303,13 +318,14 @@ namespace ShopManagementSystem
             Product_Name.Clear();
             ProductID.Clear();
             Total_Amt.Text = "0";
-            SubTotal.Clear();
+            SubTotal.Text = "0";
             Discount.Text = "0";
             GST.Clear();
             PaidAmount.Clear();
             ReturnAmount.Clear();
             Quantity.Text = "0";
             Amount.Text = "0";
+            transactionDT.Clear();
             AddedProducts.DataSource = null;
         }
 
@@ -394,13 +410,14 @@ namespace ShopManagementSystem
             Product_Name.Clear();
             ProductID.Clear();
             Total_Amt.Text = "0";
-            SubTotal.Clear();
+            SubTotal.Text = "0";
             Discount.Text = "0";
             GST.Clear();
             PaidAmount.Clear();
             ReturnAmount.Clear();
             Quantity.Text = "0";
             Amount.Text = "0";
+            transactionDT.Clear();
             AddedProducts.DataSource = null;
         }
     }

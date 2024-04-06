@@ -35,3 +35,42 @@ C:\Users\Hp\documents\visual studio 2017\Projects\ShopManagementSystem\ShopManag
 C:\Users\Hp\documents\visual studio 2017\Projects\ShopManagementSystem\ShopManagementSystem\obj\Debug\ShopManagementSystem.MyLogin.resources
 C:\Users\Hp\documents\visual studio 2017\Projects\ShopManagementSystem\ShopManagementSystem\obj\Debug\ShopManagementSystem.MyApplications.resources
 C:\Users\Hp\documents\visual studio 2017\Projects\ShopManagementSystem\ShopManagementSystem\obj\Debug\ShopManagementSystem.Details.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\bin\Debug\ShopManagementSystem.exe.config
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\bin\Debug\ShopManagementSystem.exe
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\bin\Debug\ShopManagementSystem.pdb
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.csproj.AssemblyReference.cache
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.CustomerDelete.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.CustomerInsert.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.CustomerUpdate.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.CustomerView.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.Details.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.Developers.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.FormMenu.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.MyApplications.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.MyLogin.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.OrderDelete.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.OrderInsert.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.OrderView.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ProductDelete.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ProductInsert.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ProductUpdate.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ProductView.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.Properties.Resources.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ReportCustomer.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ReportOrder.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ReportProduct.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ReportStocks.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.ReportVendors.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.StockDelete.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.StockInsert.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.StockUpdate.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.StockView.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.VendorDelete.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.VendorInsert.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.VendorUpdate.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.VendorView.resources
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.csproj.GenerateResource.cache
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.csproj.CoreCompileInputs.cache
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.exe
+C:\projects\.net\Shop-Management-System\ShopManagementSystem\obj\Debug\ShopManagementSystem.pdb
